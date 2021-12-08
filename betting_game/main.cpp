@@ -33,14 +33,14 @@ int main()
 		if (playerNumber == randomNumber)
 		{
 			totalBalance *= 2;
-			randomNumber = getRandom();
 			cout << "Congrats,you won!!!!Your new sum of money is:" << totalBalance;
+			randomNumber = getRandom();
 		}
-		if (playerNumber < randomNumber)
+		else if (playerNumber < randomNumber)
 		{
 			cout << "Try a little higher,your sum of money is:"<<totalBalance;
 		}
-		if (playerNumber > randomNumber)
+		else if (playerNumber > randomNumber)
 		{
 			cout << "Try a little lower,your sum of money is:"<<totalBalance;
 		}
@@ -51,7 +51,7 @@ int main()
 		}
 		else if (choice == "no")
 		{
-			shouldEnd == true;
+			shouldEnd = true;
 		}
 		else
 		{
