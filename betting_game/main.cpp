@@ -33,6 +33,7 @@ int main()
 		if (playerNumber == randomNumber)
 		{
 			totalBalance *= 2;
+			randomNumber = getRandom();
 			cout << "Congrats,you won!!!!Your new sum of money is:" << totalBalance;
 		}
 		if (playerNumber < randomNumber)
