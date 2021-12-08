@@ -19,7 +19,7 @@ int main()
 	bool shouldEnd = false;
 	cout << "Introduce your name:";
 	std::getline(cin, playerName);
-	while (!shouldEnd && totalBalance>100 && totalBalance>0)
+	while (!shouldEnd || totalBalance>100 || totalBalance>0)
 	{
 		string choice;
 		cout << "How much would you like to bet(a number greater then 100):"; cin >> bettedAmount;
